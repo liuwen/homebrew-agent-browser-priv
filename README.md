@@ -11,4 +11,5 @@ brew install agent-browser
 ```
 
 The formula installs `agent-browser` and keeps `agent-browser-priv` as a
-compatibility command alias for existing scripts.
+compatibility command alias for existing scripts. Published binaries are
+available for macOS ARM64 and Linux x86_64/ARM64.
