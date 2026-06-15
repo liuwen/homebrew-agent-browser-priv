@@ -1,14 +1,14 @@
-# Homebrew tap for agent-browser-priv
+# Homebrew tap for agent-browser
 
-This tap will distribute `agent-browser-priv`, a private-runtime fork of
-`vercel-labs/agent-browser`.
+This tap distributes `agent-browser`, a fork of `vercel-labs/agent-browser`
+with Patchright as the default local Chrome-compatible backend.
 
-Planned install command:
+Install:
 
 ```bash
 brew tap liuwen/agent-browser-priv
-brew install agent-browser-priv
+brew install agent-browser
 ```
 
-The formula will be added after the first `agent-browser-priv` GitHub Release
-publishes checksummed platform binaries.
+The formula installs `agent-browser` and keeps `agent-browser-priv` as a
+compatibility command alias for existing scripts.
