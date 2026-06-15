@@ -1,13 +1,13 @@
 class AgentBrowser < Formula
   desc "Browser automation CLI for AI agents with Patchright as the default backend"
   homepage "https://github.com/liuwen/agent-browser-priv"
-  version "0.27.3-priv.4"
+  version "0.27.3-priv.5"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/liuwen/agent-browser-priv/releases/download/v0.27.3-priv.4/agent-browser-priv-darwin-arm64"
-      sha256 "09de4408f259f786790d0988008beabf93d554196c50441e91a1efbbbd6df365"
+      url "https://github.com/liuwen/agent-browser-priv/releases/download/v0.27.3-priv.5/agent-browser-priv-darwin-arm64"
+      sha256 "dc35c3a3d2d8a17e65892b75220e0b89a0a3bede12060411380f74bc85ed3ee0"
     end
   end
 
