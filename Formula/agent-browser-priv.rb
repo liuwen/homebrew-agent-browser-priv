@@ -13,13 +13,16 @@ class AgentBrowserPriv < Formula
 
   def install
     unsupported = "agent-browser-priv Homebrew binary is currently published for macOS ARM64 only"
-    odie unsupported if !OS.mac?
-    odie unsupported if !Hardware::CPU.arm?
+    odie unsupported unless supported_platform?
 
     bin.install "agent-browser-priv-darwin-arm64" => "agent-browser-priv"
   end
 
   test do
     assert_match version.to_s, shell_output("#{bin}/agent-browser-priv --version")
+  end
+
+  def supported_platform?
+    OS.mac? && Hardware::CPU.arm?
   end
 end
