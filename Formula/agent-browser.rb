@@ -1,23 +1,23 @@
 class AgentBrowser < Formula
   desc "Browser automation CLI for AI agents with Patchright as the default backend"
   homepage "https://github.com/liuwen/agent-browser-priv"
-  version "0.27.3-priv.6"
+  version "0.28.0-priv.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/liuwen/agent-browser-priv/releases/download/v0.27.3-priv.6/agent-browser-priv-darwin-arm64"
-      sha256 "b1862e24dc63bd5448039eca2a6f8dddd0c231ca79d03201b2e83aab43a137f6"
+      url "https://github.com/liuwen/agent-browser-priv/releases/download/v0.28.0-priv.1/agent-browser-priv-darwin-arm64"
+      sha256 "dc9d939b8ecfc73124472f5b558c6bfb59bed9377b300274f66617a3ea182b73"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/liuwen/agent-browser-priv/releases/download/v0.27.3-priv.6/agent-browser-priv-linux-arm64"
-      sha256 "9576968891446428d986fee4f1e49fb26031225318c1f575250e4edae32a91a8"
+      url "https://github.com/liuwen/agent-browser-priv/releases/download/v0.28.0-priv.1/agent-browser-priv-linux-arm64"
+      sha256 "0403f27e513b3a9a199a96f63dfe3b73c9dff46fe49acbae85875fd84614b92f"
     elsif Hardware::CPU.intel?
-      url "https://github.com/liuwen/agent-browser-priv/releases/download/v0.27.3-priv.6/agent-browser-priv-linux-x64"
-      sha256 "364544c589e8f2d92e2a7162ea79f3040765d082882158e71e60c8665615b848"
+      url "https://github.com/liuwen/agent-browser-priv/releases/download/v0.28.0-priv.1/agent-browser-priv-linux-x64"
+      sha256 "56a8609436d845681c89f4a9325c09bff37aa15d65bd62ddc6f60281278431b7"
     end
   end
 
